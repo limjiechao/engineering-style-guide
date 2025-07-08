@@ -1,6 +1,6 @@
 {
   "name": "engineering-style-guide",
-  "version": "0.0.0",
+  "version": "1.0.0-canary.1",
   "private": false,
   "description": "Style guide based on Glasshouse's ESLint 9 refactor of Vercel Engineering Style Guide",
   "keywords": [
