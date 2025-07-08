@@ -1,0 +1,176 @@
+{
+  "name": "engineering-style-guide",
+  "version": "0.0.0",
+  "private": false,
+  "description": "Style guide based on Glasshouse's ESLint 9 refactor of Vercel Engineering Style Guide",
+  "keywords": [
+    "eslint",
+    "prettier",
+    "typescript",
+    "stylelint",
+    "style-guide",
+    "linting",
+    "code-quality",
+    "development-tools"
+  ],
+  "homepage": "https://github.com/limjiechao/engineering-style-guide#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/limjiechao/engineering-style-guide.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Lim Jiechao",
+    "email": "jiechao.lim@gmail.com",
+    "url": "https://github.com/limjiechao"
+  },
+  "contributors": [
+    {
+      "name": "Vercel",
+      "url": "https://github.com/vercel/style-guide"
+    },
+    {
+      "name": "Glasshouse Venture Studio",
+      "url": "https://github.com/GlasshouseVentureStudio/glasshouse-stack/tree/main/packages/style-guide"
+    }
+  ],
+  "exports": {
+    "./eslint/browser.js": "./eslint/browser.js",
+    "./eslint/node.js": "./eslint/node.js",
+    "./eslint/next.js": "./eslint/next.js",
+    "./eslint/react.js": "./eslint/react.js",
+    "./eslint/typescript.js": "./eslint/typescript.js",
+    "./eslint/vitest.js": "./eslint/vitest.js",
+    "./prettier.config.mjs": "./prettier.config.mjs",
+    "./typescript/tsconfig.base.json": "./typescript/tsconfig.base.json",
+    "./typescript/tsconfig.node16.json": "./typescript/tsconfig.node16.json",
+    "./typescript/tsconfig.node18.json": "./typescript/tsconfig.node18.json",
+    "./typescript/tsconfig.node20.json": "./typescript/tsconfig.node20.json",
+    "./typescript/nextjs.json": "./typescript/nextjs.json",
+    "./typescript/react-library.json": "./typescript/react-library.json",
+    "./stylelint/index.json": "./stylelint/index.json"
+  },
+  "files": [
+    "eslint",
+    "prettier",
+    "typescript",
+    "stylelint"
+  ],
+  "scripts": {
+    "eslint-check": "eslint --max-warnings=0 .",
+    "eslint-fix": "eslint --fix .",
+    "prepare": "husky",
+    "prettier-check": "prettier --check .",
+    "prettier-fix": "prettier --write .",
+    "semantic-release": "semantic-release"
+  },
+  "dependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/eslint-parser": "^7.28.0",
+    "@eslint-community/eslint-plugin-eslint-comments": "^4.4.1",
+    "@eslint/compat": "^1.2.7",
+    "@eslint/eslintrc": "^3.3.0",
+    "@eslint/js": "^9.30.1",
+    "@typescript-eslint/eslint-plugin": "^8.35.1",
+    "@typescript-eslint/parser": "^8.35.1",
+    "@vitest/eslint-plugin": "^1.1.36",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-config-turbo": "^2.4.4",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-typescript": "^3.10.1",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jest": "^29.0.1",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-playwright": "^2.2.0",
+    "eslint-plugin-prettier": "^5.5.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-compiler": "^19.0.0-beta-40c6c23-20250301",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-testing-library": "^7.5.3",
+    "eslint-plugin-tsdoc": "^0.4.0",
+    "eslint-plugin-unicorn": "^59.0.1",
+    "globals": "^16.0.0",
+    "prettier-plugin-packagejson": "^2.5.18",
+    "prettier-plugin-sort-json": "^4.1.1",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "stylelint-config-css-modules": "^4.4.0",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-recess-order": "^6.0.0",
+    "stylelint-config-sass-guidelines": "^12.1.0",
+    "stylelint-config-standard": "^37.0.0",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "typescript-eslint": "^8.35.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@commitlint/types": "^19.8.0",
+    "@semantic-release/git": "^10.0.1",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/node": "^24.0.10",
+    "eslint": "^9.30.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "postcss": "^8.5.3",
+    "prettier": "^3.6.2",
+    "prettier-plugin-packagejson": "^2.5.10",
+    "prettier-plugin-sort-json": "^4.1.1",
+    "semantic-release": "^24.2.0",
+    "stylelint": "^16.15.0",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "@next/eslint-plugin-next": ">=15.2.1",
+    "@typescript-eslint/eslint-plugin": ">=8.26.0",
+    "@typescript-eslint/parser": ">=8.26.0",
+    "eslint": ">=9.0.0 <10.0.0",
+    "eslint-config-prettier": ">=10.1.1",
+    "eslint-config-turbo": ">=2.4.4",
+    "eslint-plugin-react-compiler": ">=19.0.0-beta-37ed2a7-20241206",
+    "eslint-plugin-simple-import-sort": ">=12.1.1",
+    "prettier": ">=3.6.2 <4",
+    "prettier-plugin-packagejson": ">=2.5.10",
+    "prettier-plugin-sort-json": ">=4.1.1",
+    "prettier-plugin-tailwindcss": ">=0.6.11",
+    "stylelint-config-css-modules": ">=4.4.0",
+    "stylelint-config-prettier-scss": ">=1.0.0",
+    "stylelint-config-recess-order": ">=6.0.0",
+    "stylelint-config-sass-guidelines": ">=12.1.0",
+    "stylelint-config-standard": ">=37.0.0",
+    "stylelint-config-standard-scss": ">=14.0.0",
+    "typescript": ">=5.8.3 <6"
+  },
+  "peerDependenciesMeta": {
+    "@next/eslint-plugin-next": {
+      "optional": true
+    },
+    "eslint": {
+      "optional": true
+    },
+    "eslint-config-turbo": {
+      "optional": true
+    },
+    "prettier": {
+      "optional": true
+    },
+    "stylelint-config-prettier-scss": {
+      "optional": true
+    },
+    "stylelint-config-sass-guidelines": {
+      "optional": true
+    },
+    "stylelint-config-standard-scss": {
+      "optional": true
+    },
+    "typescript": {
+      "optional": true
+    }
+  },
+  "packageManager": "npm@11.4.2",
+  "engines": {
+    "node": ">=24.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
