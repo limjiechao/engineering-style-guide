@@ -48,7 +48,8 @@
     "./typescript/tsconfig.node20.json": "./typescript/tsconfig.node20.json",
     "./typescript/nextjs.json": "./typescript/nextjs.json",
     "./typescript/react-library.json": "./typescript/react-library.json",
-    "./stylelint/index.json": "./stylelint/index.json"
+    "./stylelint/index.json": "./stylelint/index.json",
+    "./utils/require-package.js": "./utils/require-package.js"
   },
   "files": [
     "eslint",
