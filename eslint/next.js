@@ -27,7 +27,10 @@ module.exports = [
     plugins: {
       '@next/next': fixupPluginRules(nextPlugin),
     },
-    rules: nextPlugin.configs.recommended.rules,
+    rules: {
+      ...nextPlugin.configs['core-web-vitals'].rules,
+      ...nextPlugin.configs.recommended.rules,
+    },
   },
   {
     files: JAVASCRIPT_FILES,
