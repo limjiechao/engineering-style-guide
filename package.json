@@ -40,6 +40,7 @@
     "./eslint/next.js": "./eslint/next.js",
     "./eslint/react.js": "./eslint/react.js",
     "./eslint/typescript.js": "./eslint/typescript.js",
+    "./eslint/utils/require-package.js": "./eslint/utils/require-package.js",
     "./eslint/vitest.js": "./eslint/vitest.js",
     "./prettier.config.mjs": "./prettier.config.mjs",
     "./typescript/tsconfig.base.json": "./typescript/tsconfig.base.json",
@@ -48,12 +49,10 @@
     "./typescript/tsconfig.node20.json": "./typescript/tsconfig.node20.json",
     "./typescript/nextjs.json": "./typescript/nextjs.json",
     "./typescript/react-library.json": "./typescript/react-library.json",
-    "./stylelint/index.json": "./stylelint/index.json",
-    "./eslint/utils/require-package.js": "./eslint/utils/require-package.js"
+    "./stylelint/index.json": "./stylelint/index.json"
   },
   "files": [
     "eslint",
-    "prettier",
     "typescript",
     "stylelint"
   ],
