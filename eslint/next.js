@@ -3,7 +3,7 @@ const { fixupPluginRules } = require('@eslint/compat');
 // Plugins
 const nextPlugin = require('@next/eslint-plugin-next');
 // Utils
-const requirePackage = require('../utils/require-package');
+const requirePackage = require('./utils/require-package');
 // Constants
 const { JAVASCRIPT_FILES } = require('./_constants');
 
